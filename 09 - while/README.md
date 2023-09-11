@@ -44,10 +44,6 @@ Cet exercice vous permettra d'utiliser une boucle `while` pour rechercher un él
 
 6. Affichez un message dans la console indiquant si l'élément a été trouvé ou non.
 
-
-
-
-
 ## Partie 2 - Aller plus loin
 
 ## Exercice 4 : Suite de Fibonacci
