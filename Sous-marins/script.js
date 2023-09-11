@@ -30,4 +30,12 @@ for (let i = 0; i < tableColums; i++) {
   }
 }
 
+function addToHtml(myData) {
+  let p = document.createElement("p");
+  p.innerHTML = myData;
+  document.querySelector("body").append(p);
+}
+
 console.log(ocean);
+
+addToHtml(ocean);
