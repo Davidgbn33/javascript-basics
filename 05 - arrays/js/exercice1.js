@@ -1,1 +1,3 @@
-// Your code goes here
+let fruits = ["Banane", "Fraise", "Pomme"];
+
+console.log(fruits);
