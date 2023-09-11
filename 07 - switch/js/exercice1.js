@@ -22,4 +22,6 @@ switch (dayOfWeek) {
   case 7:
     console.log("Dimanche");
     break;
+  default:
+    console.log("error");
 }

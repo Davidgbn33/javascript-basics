@@ -11,4 +11,6 @@ switch (language) {
   case js:
     console.log(js);
     break;
+  default:
+    console.log("error");
 }

@@ -16,9 +16,9 @@ switch (month) {
   case 9:
     console.log("été");
     break;
-  case 10:
-  case 11:
-  case 12:
+  case 10 || 11 || 12:
     console.log("automne");
     break;
+  default:
+    console.log("error");
 }
