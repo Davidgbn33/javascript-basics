@@ -1,13 +1,20 @@
-let a = prompt("entrer un X ou O");
-let b = prompt("entrer un X ou O");
-let c = prompt("entrer un X ou O");
-let d = prompt("entrer un X ou O");
-let e = prompt("entrer un X ou O");
-let f = prompt("entrer un X ou O");
-let g = prompt("entrer un X ou O");
-let h = prompt("entrer un X ou O");
-let i = prompt("entrer un X ou O");
+for (i = 1; i < 10; i++) {
+  if (i % 2 !== 0) {
+    let boxPlayer1 = parseInt(prompt(" Player 1 :quel case veux tu jouer ?"));
+    jouerTour(boxPlayer1, "X");
+  } else {
+    let boxPlayer2 = parseInt(prompt(" Player 2 :quel case veux tu jouer ?"));
+    jouerTour(boxPlayer2, "O");
+  }
+}
 
-let morpion = [(row1 = [a, b, c]), (row2 = [d, e, f]), (row3 = [g, h, i])];
-
-console.log(morpion);
+function jouerTour(numeroCase, symbole) {
+  let caseElement = document.querySelector("#box" + numeroCase);
+  if (caseElement.textContent === "") {
+    caseElement.textContent = symbole;
+  } else {
+    alert("La case est déjà occupée. Choisissez une autre case.");
+    // Réduire le tour pour permettre au même joueur de rejouer
+    i--;
+  }
+}
